@@ -1,0 +1,255 @@
+* {
+	color: #AFB6C2;
+}
+
+body {
+	background-color: #191816;
+	margin: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	/* display: flex; */
+	/* justify-content: space-between; */
+}
+
+#section__left {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 50vw;
+}
+
+#mobile {
+	display: flex;
+	flex-direction: column;
+	margin: 32px 62px;
+}
+
+header {
+	margin-left: 5%;
+	margin-top: 5%;
+	flex: 1;
+}
+
+main {
+	flex: 2;
+}
+
+#box__login {
+	display: flex;
+	/* width: 50%; */
+	/* height: 75%; */
+	width: 480px;
+	height: 500px;
+	margin: auto;
+	background-color: #24221F;
+}
+
+#box__login__center {
+	height: 80%;
+	width: 75%;
+	margin: auto;
+}
+
+#box__login__center h1 {
+	color: #d4ccb6;
+}
+
+
+.in__block {
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+#login {
+	margin-right: 10px;;
+}
+
+p {
+	margin-top: 0;
+}
+
+.relative {
+	position: relative;
+}
+
+.relative img, .absolute {
+	position: absolute;
+	top: 25%;
+	left: 1%;
+}
+
+.input__text {
+	background-color: transparent;
+	color: #A9AFB9;
+	border-style: solid;
+	border-color: #868686;
+	border-radius: 4px;
+	width: 90%;
+	height: 30px;
+	padding-left: 40px;
+}
+
+.input__text:focus {
+	outline: 3px solid #FFC632;
+	border-color: transparent;
+	border-radius: 4px;
+}
+
+#show__password {
+	position: absolute;
+	top: 25%;
+	right: 0;
+	background-image: url('assets/eye.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: transparent;
+	border: none;
+	width: 20px;
+	height: 20px;
+}
+
+.separator__bottom {
+	margin-bottom: 5%;
+}
+
+.separator__middle {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+
+.flex__h {
+	display: flex;
+	justify-content: space-between;
+}
+
+.button__center {
+	display: block;
+	width: 100%;
+}
+
+.button__textonly {
+	background-color: transparent;
+	border: none;
+	color: #FFC632;
+}
+
+.button__textonly:hover {
+	text-decoration: underline;
+}
+strong {
+	color: #FFC632;
+}
+
+#button__enter {
+	height: 50px;
+	background-color: #FFC632;
+	color: #473404;
+	border-radius: 4px;
+	border: none;
+}
+
+.font__poppins {
+	font-family: 'Poppins', sans-serif;
+}
+
+#remember-me {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	user-select: none;
+	cursor: pointer;
+}
+
+.poppins {
+	font-family: 'Poppins', sans-serif;
+}
+
+.roboto {
+	font-family: 'Roboto', sans-serif;
+}
+
+.font__500 {
+	font-weight: 500;
+}
+
+.font__600 {
+	font-weight: 600;
+}
+
+/* #section__right { */
+/* 	height: 948px; */
+/* } */
+#section__right img {
+	width: 100%;
+	height: 99.5vh;
+	object-fit: cover;
+	left: 0;
+}
+
+#checkbox__remember-me {
+	margin-right: 5px;
+	display: inline-block;
+	background-color: transparent;
+	border: 2px solid #A9AFB9;
+	border-radius: 4px;
+	height: 16px;
+	width: 16px;
+	cursor: pointer;
+}
+
+button {
+	cursor: pointer;
+}
+
+#check {
+	display: flex;
+}
+
+#checkbox__remember-me {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+#checkbox__custom {
+	position: relative;
+	width: 18px;
+	height: 18px;
+	margin-right: 5px;
+	background-color: transparent;
+	border: 1px solid #868686;
+	border-radius: 4px;
+}
+
+.checkbox__custom:hover {
+	border-color: #FFC632;
+}
+
+button:active {
+	opacity: .6;
+}
+#checkbox__custom img {     /*TODO - add a div when the button is pressed*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* .checkbox__custom:active {     - TODO - Javascript this */ 
+/* 	background-color: #FFC632; */
+/* } */
+
+#div__remember {
+	display: flex;
+	justify-content: space-between;
+}
+
+#button__enter:active {
+	opacity: .9;
+	height: 48px;
+	margin-top:20px;
+}
+
+.button__textonly:active {
+	opacity: .8;
+}

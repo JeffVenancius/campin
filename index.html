@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width",initial-scale=1.0>
+	<link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+	<title>camp.in</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section id="section__left">
+		<header>
+			<img src="assets/logo.svg" alt="">
+		</header>
+		<main>
+			<div id="box__login">
+				<div id="box__login__center">
+					<img  class="in__block"id="login" src="assets/log-in.svg" alt="">
+					<h1 class="in__block poppins font__600">Faça seu login</h1>
+					<p class="roboto font__500">Entre com suas informações de cadastro</p>
+
+				<div class="separator__bottom">
+					<label class="poppins font__500" for="e-mail">E-mail</label>
+					<div class="relative">
+						<img id="e-mail__icon" src="assets/mail.svg" alt="e-mail">
+						<input class="input__text roboto" id="e-mail" type="text" placeholder="Digite seu e-mail" onclick=firstFocus() onfocusout=firstUnfocus()>
+					</div>
+				</div>
+
+					<div>
+						<label class="poppins font__500" for="password">Senha</label>
+						<div class="relative">
+							<img id="password__icon" src="assets/lock.svg" alt="">
+							<input class="input__text roboto" id="password" type="password" placeholder="Digite sua senha" onclick=firstFocus(false) onfocusout=firstUnfocus(false)>
+							<button id="show__password" onclick=toggleEye()></button>
+						</div>
+					</div>
+
+					<div class="separator__middle flex__h">
+						<div id="check" onclick="checkCustom()">
+							<button id="checkbox__custom"></button>
+							<label class="roboto" id="remember-me" for="remember-me">Lembre-me</label>
+						</div>
+						<button class="button__textonly poppins font__600">Esqueci minha senha</button>
+					</div>
+
+					<button id="button__enter" class="separator__bottom button__center poppins font__600">Entrar</button>
+					<button class="button__textonly button__center poppins">Não tem uma conta? <strong class="font__600">Registre-se</strong></button>
+				</div>
+			</div>
+		</main>
+	</section>
+	<section id="section__right">
+		<img src="assets/side-image-2x.jpg" alt="">
+	</section>
+	<script src="script.js"></script>
+</body>
+</html>
